@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:nubank_clone/pages/home/widgets/actions/widgets/menu_options_item.dart';
+import 'package:nubank_clone/utils/app_strings.dart';
 
 class MenuItens extends StatelessWidget {
   const MenuItens({Key? key}) : super(key: key);
@@ -16,28 +17,28 @@ class MenuItens extends StatelessWidget {
           children: const [
             MenuOptionsItem(
               icon: MdiIcons.clover,
-              name: 'Área Pix',
+              name: AppStrings.areaPix,
               isFirst: true,
             ),
             MenuOptionsItem(
               icon: MdiIcons.barcode,
-              name: 'Pagar',
+              name: AppStrings.pagar,
             ),
             MenuOptionsItem(
               icon: MdiIcons.cash,
-              name: 'Transferir',
+              name: AppStrings.transferir,
             ),
             MenuOptionsItem(
               icon: MdiIcons.cash,
-              name: 'Depositar',
+              name: AppStrings.depositar,
             ),
             MenuOptionsItem(
               icon: MdiIcons.creditCard,
-              name: 'Recarga',
+              name: AppStrings.recarga,
             ),
             MenuOptionsItem(
               icon: MdiIcons.heartOutline,
-              name: 'Doação',
+              name: AppStrings.doacao,
             ),
           ],
         ),
