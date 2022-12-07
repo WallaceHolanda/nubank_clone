@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:nubank_clone/pages/account/account.dart';
 import 'package:nubank_clone/pages/home/widgets/actions/menu_itens.dart';
-import 'package:nubank_clone/pages/home/widgets/header.dart';
+import 'package:nubank_clone/pages/home/widgets/header/header.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
