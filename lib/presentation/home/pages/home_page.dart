@@ -4,6 +4,7 @@ import 'package:nubank_clone/presentation/home/widgets/account/account.dart';
 import 'package:nubank_clone/presentation/home/widgets/actions/menu_itens.dart';
 import 'package:nubank_clone/presentation/home/widgets/creditCards/credit_cards.dart';
 import 'package:nubank_clone/presentation/home/widgets/header/header.dart';
+import 'package:nubank_clone/presentation/home/widgets/notifications/notifications.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -16,7 +17,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: backgroundcolor,
       appBar: _appBar(),
       body: SingleChildScrollView(
         child: Container(
@@ -28,6 +28,7 @@ class _HomePageState extends State<HomePage> {
               MenuItens(),
               Divider(thickness: 1.2),
               CreditCards(),
+              Notifications(),
             ],
           ),
         ),
