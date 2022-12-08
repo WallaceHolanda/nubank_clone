@@ -8,4 +8,5 @@ class AppStrings {
   static const depositar = 'Depositar';
   static const recarga = 'Recarga';
   static const doacao = 'Doação';
+  static const meusCartoes = 'Meus Cartões';
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:nubank_clone/presentation/home/widgets/account/account.dart';
 import 'package:nubank_clone/presentation/home/widgets/actions/menu_itens.dart';
+import 'package:nubank_clone/presentation/home/widgets/creditCards/credit_cards.dart';
 import 'package:nubank_clone/presentation/home/widgets/header/header.dart';
 
 class HomePage extends StatefulWidget {
@@ -25,6 +26,8 @@ class _HomePageState extends State<HomePage> {
               Header(),
               AccountNubank(),
               MenuItens(),
+              Divider(thickness: 1.2),
+              CreditCards(),
             ],
           ),
         ),
