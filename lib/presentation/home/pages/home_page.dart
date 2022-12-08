@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:nubank_clone/pages/account/account.dart';
-import 'package:nubank_clone/pages/home/widgets/actions/menu_itens.dart';
-import 'package:nubank_clone/pages/home/widgets/header/header.dart';
+import 'package:nubank_clone/presentation/home/widgets/account/account.dart';
+import 'package:nubank_clone/presentation/home/widgets/actions/menu_itens.dart';
+import 'package:nubank_clone/presentation/home/widgets/header/header.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({Key? key}) : super(key: key);
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -21,10 +21,10 @@ class _HomePageState extends State<HomePage> {
         child: Container(
           color: Colors.white,
           child: Column(
-            children: [
+            children: const [
               Header(),
               AccountNubank(),
-              const MenuItens(),
+              MenuItens(),
             ],
           ),
         ),

@@ -6,7 +6,7 @@ import 'package:nubank_clone/utils/app_colors.dart';
 import 'package:nubank_clone/utils/app_strings.dart';
 
 class Header extends StatefulWidget {
-  Header({Key? key}) : super(key: key);
+  const Header({Key? key}) : super(key: key);
 
   @override
   State<Header> createState() => _HeaderState();

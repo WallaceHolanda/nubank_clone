@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:nubank_clone/pages/home/widgets/actions/widgets/menu_options_item.dart';
+import 'package:nubank_clone/presentation/home/widgets/actions/widgets/menu_options_item.dart';
 import 'package:nubank_clone/utils/app_strings.dart';
 
 class MenuItens extends StatelessWidget {
