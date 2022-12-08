@@ -2,6 +2,16 @@ import 'package:flutter/widgets.dart';
 import 'package:nubank_clone/utils/app_colors.dart';
 import 'package:nubank_clone/utils/app_strings.dart';
 
+class NotificationText {
+  final String text;
+  final bool? isSecondaryColor;
+
+  NotificationText({
+    required this.text,
+    this.isSecondaryColor,
+  });
+}
+
 class Notifications extends StatelessWidget {
   const Notifications({super.key});
 
@@ -11,15 +21,36 @@ class Notifications extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: [
-          _income(context),
-          _lifeSecurity(context),
-          _income(context),
+          _notificationCard(
+            context,
+            <NotificationText>[
+              NotificationText(text: AppStrings.seu),
+              NotificationText(
+                text: AppStrings.informeDeRendimentos,
+                isSecondaryColor: true,
+              ),
+              NotificationText(text: AppStrings.de2021),
+            ],
+          ),
+          _notificationCard(
+            context,
+            <NotificationText>[
+              NotificationText(text: AppStrings.chegou),
+              NotificationText(
+                text: AppStrings.debitoAutomatico,
+                isSecondaryColor: true,
+              ),
+            ],
+          ),
         ],
       ),
     );
   }
 
-  _income(context) {
+  _notificationCard(
+    context,
+    List<NotificationText> stringsList,
+  ) {
     return Container(
       width: MediaQuery.of(context).size.width * 0.7,
       margin: const EdgeInsets.fromLTRB(10, 10, 20, 0),
@@ -29,61 +60,18 @@ class Notifications extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
       ),
       child: RichText(
-        text: const TextSpan(
+        text: TextSpan(
           children: [
-            TextSpan(
-              text: AppStrings.seu,
-              style: TextStyle(
-                color: AppColors.text,
-                fontSize: 16,
+            for (final element in stringsList)
+              TextSpan(
+                text: element.text,
+                style: TextStyle(
+                  color: element.isSecondaryColor ?? false
+                      ? AppColors.backgroundcolor
+                      : AppColors.text,
+                  fontSize: 16,
+                ),
               ),
-            ),
-            TextSpan(
-              text: AppStrings.informeDeRendimentos,
-              style: TextStyle(
-                color: AppColors.backgroundcolor,
-                fontSize: 16,
-              ),
-            ),
-            TextSpan(
-              text: AppStrings.de2021,
-              style: TextStyle(
-                color: AppColors.text,
-                fontSize: 16,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  _lifeSecurity(context) {
-    return Container(
-      width: MediaQuery.of(context).size.width * 0.7,
-      margin: const EdgeInsets.fromLTRB(10, 10, 20, 0),
-      padding: const EdgeInsets.all(24),
-      decoration: BoxDecoration(
-        color: AppColors.greyColor,
-        borderRadius: BorderRadius.circular(16),
-      ),
-      child: RichText(
-        text: const TextSpan(
-          children: [
-            TextSpan(
-              text: AppStrings.chegou,
-              style: TextStyle(
-                color: AppColors.text,
-                fontSize: 16,
-              ),
-            ),
-            TextSpan(
-              text: AppStrings.debitoAutomatico,
-              style: TextStyle(
-                color: AppColors.backgroundcolor,
-                fontSize: 16,
-              ),
-            )
           ],
         ),
       ),
