@@ -2,6 +2,7 @@ class AppStrings {
   static const nomeApp = 'Nubank';
   static const olaUsuario = 'Olá, Wallace';
   static const conta = 'Conta';
+  static const cartaoDeCredito = 'Cartão de crédito';
 
   /* Menu de ações */
   static const areaPix = 'Área Pix';

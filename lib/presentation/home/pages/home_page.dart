@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:nubank_clone/presentation/home/widgets/account/account.dart';
 import 'package:nubank_clone/presentation/home/widgets/actions/menu_itens.dart';
 import 'package:nubank_clone/presentation/home/widgets/creditCards/credit_cards.dart';
+import 'package:nubank_clone/presentation/home/widgets/creditCards/my_credit_cards.dart';
 import 'package:nubank_clone/presentation/home/widgets/header/header.dart';
 import 'package:nubank_clone/presentation/home/widgets/notifications/notifications.dart';
 
@@ -22,13 +23,17 @@ class _HomePageState extends State<HomePage> {
         child: Container(
           color: Colors.white,
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
               Header(),
               AccountNubank(),
               MenuItens(),
               Divider(thickness: 1.2),
-              CreditCards(),
+              MyCreditCards(),
               Notifications(),
+              Divider(thickness: 1.2),
+              CreditCard(),
             ],
           ),
         ),
