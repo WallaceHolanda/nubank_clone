@@ -60,7 +60,7 @@ class CreditCard extends StatelessWidget {
         const Text(
           AppStrings.faturaAtual,
           style: TextStyle(
-            color: AppColors.greyT,
+            color: AppColors.greyText,
           ),
         ),
         const SizedBox(height: 12),
@@ -83,7 +83,7 @@ class CreditCard extends StatelessWidget {
     return const Text(
       AppStrings.limiteCartaoDeCredito,
       style: TextStyle(
-        color: AppColors.greyT,
+        color: AppColors.greyText,
       ),
     );
   }
