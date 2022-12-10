@@ -2,7 +2,6 @@ class AppStrings {
   static const nomeApp = 'Nubank';
   static const olaUsuario = 'Olá, Wallace';
   static const conta = 'Conta';
-  static const cartaoDeCredito = 'Cartão de crédito';
 
   /* Menu de ações */
   static const areaPix = 'Área Pix';
@@ -19,4 +18,10 @@ class AppStrings {
   static const de2021 = 'de 2022 já está chegando ...';
   static const chegou = 'Chegou o ';
   static const debitoAutomatico = 'débito automático da fatura do ...';
+
+  /* Cartão de Crédito */
+  static const cartaoDeCredito = 'Cartão de crédito';
+  static const faturaAtual = 'Fatura atual';
+  static const limiteCartaoDeCredito = 'Limite disponível de R\$ 4.000,00';
+  static const parcelarCompras = 'Parcelar compras';
 }
