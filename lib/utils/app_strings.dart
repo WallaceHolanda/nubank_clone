@@ -24,4 +24,10 @@ class AppStrings {
   static const faturaAtual = 'Fatura atual';
   static const limiteCartaoDeCredito = 'Limite disponível de R\$ 4.000,00';
   static const parcelarCompras = 'Parcelar compras';
+
+  /* Investimentos */
+  static const investimentos = 'Investimentos';
+  static const oJeitoNubank =
+      'O jeito Nu de investir: sem asteriscos, \nlinguagem fácil a partir de R\$1. Saiba mais';
+  static const consultarSaldo = 'Consultar saldo para transferência';
 }
