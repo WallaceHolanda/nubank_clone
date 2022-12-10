@@ -7,6 +7,7 @@ import 'package:nubank_clone/presentation/home/widgets/creditCards/my_credit_car
 import 'package:nubank_clone/presentation/home/widgets/header/header.dart';
 import 'package:nubank_clone/presentation/home/widgets/investments/investments.dart';
 import 'package:nubank_clone/presentation/home/widgets/notifications/notifications.dart';
+import 'package:nubank_clone/presentation/home/widgets/securityLife/security.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -37,6 +38,8 @@ class _HomePageState extends State<HomePage> {
               CreditCard(),
               Divider(thickness: 1.2),
               Investments(),
+              Divider(thickness: 1.2),
+              SecurityLife(),
             ],
           ),
         ),

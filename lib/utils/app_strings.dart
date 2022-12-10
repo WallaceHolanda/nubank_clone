@@ -30,4 +30,10 @@ class AppStrings {
   static const oJeitoNubank =
       'O jeito Nu de investir: sem asteriscos, \nlinguagem fácil a partir de R\$1. Saiba mais';
   static const consultarSaldo = 'Consultar saldo para transferência';
+
+  /* Seguro de Vida */
+  static const seguros = 'Seguros';
+  static const protecaoParaVoce = 'Proteção para você cuidar do que importa';
+  static const seguroDeVida = 'Seguro de Vida';
+  static const conhecer = 'Conhecer';
 }
