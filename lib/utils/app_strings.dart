@@ -1,3 +1,5 @@
+import 'package:nubank_clone/presentation/home/widgets/shopping/shopping.dart';
+
 class AppStrings {
   static const nomeApp = 'Nubank';
   static const olaUsuario = 'Olá, Wallace';
@@ -36,4 +38,9 @@ class AppStrings {
   static const protecaoParaVoce = 'Proteção para você cuidar do que importa';
   static const seguroDeVida = 'Seguro de Vida';
   static const conhecer = 'Conhecer';
+
+  /* Shopping */
+  static const shopping = 'Shopping';
+  static const vantagens =
+      'Vantagens exclusivas das nosssas marcas \n preferidas';
 }

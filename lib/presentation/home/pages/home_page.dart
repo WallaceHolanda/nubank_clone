@@ -8,6 +8,7 @@ import 'package:nubank_clone/presentation/home/widgets/header/header.dart';
 import 'package:nubank_clone/presentation/home/widgets/investments/investments.dart';
 import 'package:nubank_clone/presentation/home/widgets/notifications/notifications.dart';
 import 'package:nubank_clone/presentation/home/widgets/securityLife/security.dart';
+import 'package:nubank_clone/presentation/home/widgets/shopping/shopping.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -40,6 +41,9 @@ class _HomePageState extends State<HomePage> {
               Investments(),
               Divider(thickness: 1.2),
               SecurityLife(),
+              Divider(thickness: 1.2),
+              Shopping(),
+              Divider(thickness: 1.2),
             ],
           ),
         ),
