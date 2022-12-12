@@ -4,6 +4,7 @@ import 'package:nubank_clone/presentation/home/widgets/account/account.dart';
 import 'package:nubank_clone/presentation/home/widgets/actions/menu_itens.dart';
 import 'package:nubank_clone/presentation/home/widgets/creditCards/credit_cards.dart';
 import 'package:nubank_clone/presentation/home/widgets/creditCards/my_credit_cards.dart';
+import 'package:nubank_clone/presentation/home/widgets/findOutMore/find_out_more.dart';
 import 'package:nubank_clone/presentation/home/widgets/header/header.dart';
 import 'package:nubank_clone/presentation/home/widgets/investments/investments.dart';
 import 'package:nubank_clone/presentation/home/widgets/notifications/notifications.dart';
@@ -44,6 +45,7 @@ class _HomePageState extends State<HomePage> {
               Divider(thickness: 1.2),
               Shopping(),
               Divider(thickness: 1.2),
+              FindOutMore(),
             ],
           ),
         ),

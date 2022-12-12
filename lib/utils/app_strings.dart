@@ -43,4 +43,10 @@ class AppStrings {
   static const shopping = 'Shopping';
   static const vantagens =
       'Vantagens exclusivas das nosssas marcas \n preferidas';
+
+  /* Descubra Mais */
+  static const descubraMais = 'Descubra mais';
+  static const parceleCompras = 'Parcele compras no app';
+  static const suaLiberdade = 'Sua liberdade financeira \ncomeça com você ...';
+  static const portabilidadeDeSalario = 'Portabilidade de salário';
 }
