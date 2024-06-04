@@ -12,7 +12,7 @@
 <p>
   Este App se resume em um clone do App bancário Nubank
   
-  A partir do App foi possível treinar a contrução de telas e conhecer mais sobre os widgets
+  A partir do App foi possível treinar a construção de telas e conhecer mais sobre os widgets
   
   O projeto foi baseado na playlist de vídeos do [Dev Outlier](https://www.youtube.com/watch?v=w5xEqhbtYPM&t=9s&ab_channel=DevOutlier)
 </p>
